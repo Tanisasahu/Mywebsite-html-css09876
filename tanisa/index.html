@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website name</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="peta.png" alt="Site Logo" id="logo">
+            <h1><a class="a1" href="index.html" onClick="activeHome()" id="home">PETA</a></h1>
+        </div>
+        <nav>
+            <a class="a2" href="contact.html" onClick="activeContact()" id="contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="welcome">
+            <h2>Welcome to the Site</h2>
+            <p>Message</p>
+        </section>
+        
+        <section id="content">
+            <div class="content-block">
+                <div>
+                    <p>Any long text paragraph</p>
+                </div>
+                <div>
+                    <img src="xyz.jpg" alt="Image 1"height="300px"width="600px">
+                </div>
+            </div>
+            <div class="content-block">
+                <div>
+                    <img src="xyz.jpg" alt="Image 2 " height="300px"width="600px">
+                </div>
+                <div>
+                    <p>Any long text paragraph</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="video">
+            <iframe width="560"
+             height="315" 
+             src="https://www.youtube.com/embed/5F7FHspclZY?si=TddEpZXe-_aR18rV" 
+             title="YouTube video player"
+             frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin"
+             allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Footer text in small</p>
+        <p>All rights reserved</p>
+    </footer>
+    <script type="text/javascript">
+        function activeHome() {
+            document.getElementById("home").classList.add("active");
+            document.getElementById("contact").classList.remove("active");
+        }
+        function activeContact() {
+            document.getElementById("home").classList.remove("active");
+            document.getElementById("contact").classList.add("active");
+        }
+    </script>
+</body>
+</html>
